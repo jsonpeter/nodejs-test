@@ -1,0 +1,15 @@
+extends layout
+block content
+ div.center-block.col-md-4(style="float:none")
+  form.form-group.text-center
+       h1= title
+       div.login-page
+           p.text-success #{message}
+                div.row.col-md-8.col-md-offset-2
+                     div.form-group <input type="text" id="username" name="username" placeholder="用户名" class="form-control " required="required" value="">
+                     div.form-group <input type="password" id="userpwd" name="password" placeholder="密码" class="form-control " required="required" value="">
+                     p
+                         <a href="/" class="btn btn-default">注册</a>
+                         <button type="button" class="btn btn-large btn-primary" id="btn_login">登录</button>
+
+div.clearfix
